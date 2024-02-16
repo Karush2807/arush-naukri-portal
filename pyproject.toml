@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "repl-nix-first-flask-repo"
+version = "0.1.0"
+description = ""
+authors = ["arush2807 <<>>"]
+readme = "README.md"
+packages = [{include = "repl_nix_first_flask_repo"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+flask = "^3.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
