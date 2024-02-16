@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,     
+    initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-  
+    T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Arush Naukri Portal </title>
+    <!-- <style>
+      h1{
+        color:green;
+        font-family: ROboto;
+        font-weight:thick;
+        text-align:center
+      }
+      #banner{
+        width:100%;
+        height:360px;
+        object-fit:cover;  
+      }
+      h2{
+        font-family: Roboto;
+        font-size:32px;
+        text-align:centre;
+        font-weight:thick
+      }
+      p{
+        color:brown;
+      }
+      #contianer{
+        max-width:720px;
+        margin:0 auto 0 auto; 
+      }
+    </style> -->
+    <style>
+      #banner{
+        width:100%;
+        height:360px;
+        object-fit:cover;  
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+    <h1 class="text-center mt-2 mb-4"">{{company_name}} Naukri Portal</h1>
+    <img class="img-fluid" id="banner" src="https://256e64ad-0423-4dc2-9273-672f6ad3a4c6-00-1rsz3uogn0fdn.pike.replit.dev/static/banner.jpg"
+      height="300">
+    <h2>Hmare bare mein kuch vishesh jankari</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae laudantium laboriosam in consequuntur eum, deserunt assumenda nam unde temporibus debitis corporis iste quisquam expedita non corrupti cum veniam dolorem vitae.
+    </p>
+    <h2>Opening Positions!!</h2>
+    
+      <p>
+      {% for job in jobs %}
+        {%include 'jobitem.html'%}
+      {% endfor %}
+    </p>
+    <button class="btn btn-dark">hmse baat krne ke liye button dbaye</button>
+    </div>
+    
+  </body>
+</html>
