@@ -38,19 +38,33 @@
       #banner{
         width:100%;
         height:360px;
-        object-fit:cover;  
+        object-fit:cover;
+        margin-bottom:16px;
+      }
+      #btn{
+        text-align:center
       }
     </style>
   </head>
 
   <body>
-    <div class="container">
-    <h1 class="text-center mt-2 mb-4"">{{company_name}} Naukri Portal</h1>
+    {% include 'nav.html'%}
     <img class="img-fluid" id="banner" src="https://256e64ad-0423-4dc2-9273-672f6ad3a4c6-00-1rsz3uogn0fdn.pike.replit.dev/static/banner.jpg"
       height="300">
+    <div class="container">
+    <h1 class="text-center mt-2 mb-4"">{{company_name}} Naukri Portal</h1>
+    
+    
+    <div class="row"> 
+      <div class="col-md-6">
     <h2>Hmare bare mein kuch vishesh jankari</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae laudantium laboriosam in consequuntur eum, deserunt assumenda nam unde temporibus debitis corporis iste quisquam expedita non corrupti cum veniam dolorem vitae.
     </p>
+      </div>
+      <div class="d-none d-md-block col-md-6"">
+        <img src="/static/officespace.jpg" style="height:320px; border-radius:10px">
+      </div>
+    </div>
     <h2>Vacany in these positions!!</h2>
     
       <p>
@@ -58,8 +72,11 @@
         {%include 'jobitem.html'%}
       {% endfor %}
     </p>
-    <button class="btn btn-dark">hmse baat krne ke liye button dbaye</button>
     </div>
+    <div class="text-centre">
+    <a c href="mailto:arush24ita23@bpitindia.edu.in?subject=My%20question%20regarding%20this%20opening&body=My%20Name%3A%20%3Center%20your%20name%20here%3E%0D%0A%0D%0AMy%20Question%3A%20%3Center%20your%20question%3E%0D%0A" class="btn btn-dark" >contact us</a>
+    </div>
+    
     
   </body>
 </html>
